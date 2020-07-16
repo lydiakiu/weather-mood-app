@@ -1,3 +1,55 @@
+h1,
+h2 {
+  font-family: "Exo 2", sans-serif;
+  color: #212121;
+}
 h1 {
-  color: blue;
+  padding-top: 10px;
+  padding-bottom: 0;
+}
+h2 {
+  font-size: 24px;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.weathernow {
+  max-width: 700px;
+  margin: 30px auto;
+  margin-bottom: 2px;
+  padding: 20px;
+  border: 1px solid #e5e5e5;
+  border-radius: 25px;
+  background-image: linear-gradient(
+    to top,
+    #dad4ec 0%,
+    #dad4ec 1%,
+    #f3e7e9 100%
+  );
+  background-size: 840px;
+  background-repeat: no-repeat;
+}
+.form-row {
+  font-family: "Open Sans", sans-serif;
+}
+.footer {
+  padding-left: 20px;
+  font-family: "Open Sans", sans-serif;
+  display: block;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.col-3 {
+  font-family: "Exo 2", sans-serif;
+  font-size: 26px;
+}
+.col-2 img {
+  display: block;
+  float: left;
+}
+.col-4 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
 }
