@@ -27,6 +27,8 @@ function displayTemp(response) {
   let cityElement = document.querySelector("#city");
   let conditionElement = document.querySelector("#description");
   let humidityElement = document.querySelector("#humidity");
+  let minTempElement = document.querySelector("#mintemp");
+  let maxTempElement = document.querySelector("#maxtemp");
   let windElement = document.querySelector("#wind");
   let iconElement = document.querySelector("#icon");
 
@@ -35,6 +37,8 @@ function displayTemp(response) {
   conditionElement.innerHTML = response.data.weather[0].description;
   humidityElement.innerHTML = response.data.main.humidity;
   windElement.innerHTML = Math.round(response.data.wind.speed);
+  minTempElement.innerHTML = Math.round(response.data.main.temp_min);
+  maxTempElement.innerHTML = Math.round(response.data.main.temp_max);
   iconElement.setAttribute(
     "src",
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
