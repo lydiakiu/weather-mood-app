@@ -53,3 +53,8 @@ ul {
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
 }
+.col-3 .inactive {
+  color: #212121;
+  text-decoration: none;
+  cursor: default;
+}
