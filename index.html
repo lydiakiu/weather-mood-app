@@ -9,15 +9,20 @@
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
+
     <link
     href="https://fonts.googleapis.com/css2?family=Exo+2&family=Open+Sans:wght@300&display=swap"
     rel="stylesheet"
     />
+
     <script
     src="https://kit.fontawesome.com/41a3f99177.js"
-    crossorigin="anonymous"
-  ></script>
-    <link rel="stylesheet" href="src/style.css" />
+    crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <link rel="stylesheet" href="src/style.css"/>
+
     <title>Weather Now</title>
   </head>
   <body>
@@ -49,22 +54,22 @@
               </div>
             </div>
           </form>
-        <h1>
+        <h1 id = "city">
       Lisbon
          </h1>
    
         <div class="row">
           <div class="col-3">
-            <h2>
+            <h2 id="date">
             Thursday 12:00
             </h2> 
           </div>
           <div class="col-3">
            <ul>
                <li>
-                   20°C | <a href="#">°F</a>
+                   <strong id="temperature">20</strong>°C | <a href="#">°F</a>
                </li>
-               <li>
+               <li id="description">
                    Clear
                </li>
           </div>
@@ -74,10 +79,10 @@
           <div class="col-4">
             <ul>
                 <li>
-                    Humidity: 20 %
+                    Humidity: <span id="humidity">20</span>%
                 </li>
                 <li>
-                    Wind Speed: 10 km/h
+                    Wind Speed: <span id="wind">10</span>km/h
                 </li>
                 <li>
                     Min Temp: 12°C

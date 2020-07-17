@@ -44,10 +44,10 @@ ul {
 .col-3 {
   font-family: "Exo 2", sans-serif;
   font-size: 26px;
+  text-transform: capitalize;
 }
 .col-2 img {
   display: block;
-  float: left;
 }
 .col-4 {
   font-family: "Open Sans", sans-serif;
