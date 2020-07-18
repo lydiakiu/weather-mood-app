@@ -51,7 +51,6 @@ function displayTemp(response) {
 }
 
 function search(city) {
-  let apiKey = "57a751478ef508961135e0d25d48186e";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
   axios.get(apiUrl).then(displayTemp);
@@ -94,6 +93,19 @@ function displayCelTemp(event) {
   minTempElement.innerHTML = Math.round(minCelciusTemperature) + "°C";
 }
 
+function searchLocation(position) {
+  let lat = position.coords.latitude;
+  let lon = position.coords.longitude;
+  let locationUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
+  axios.get(locationUrl).then(displayTemp);
+}
+function getLocation(event) {
+  event.preventDefault();
+  navigator.geolocation.getCurrentPosition(searchLocation);
+}
+
+let apiKey = "57a751478ef508961135e0d25d48186e";
+
 let celciusTemperature = null;
 let maxCelciusTemperature = null;
 let minCelciusTemperature = null;
@@ -108,3 +120,6 @@ fahrenheitLink.addEventListener("click", displayFahTemp);
 
 let celciusLink = document.querySelector("#cel-link");
 celciusLink.addEventListener("click", displayCelTemp);
+
+let myLocation = document.querySelector("#location");
+myLocation.addEventListener("click", getLocation);
