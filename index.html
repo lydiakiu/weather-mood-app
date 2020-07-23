@@ -78,7 +78,7 @@
               <img 
               src="http://openweathermap.org/img/wn/10d@2x.png"
               alt="rain"
-              width=80px
+              width=90px
               id="icon"/>
           </div>
           <div class="col-4">
@@ -96,51 +96,29 @@
                     Max Temp: <span id="maxtemp">22</span>
                 </li>
             </ul>
-
-          </div>
-           
+          </div>           
         </div>
         <hr/>
-
-        <p class="forecast">
-            Next 5 Days
-          </p>
-          <p class="five-days">
-            <div class="row row-cols-2.4">
-             <div class="col">Friday</div>
-              <div class="col">Saturday</div>
-              <div class="col">Sunday</div>
-              <div class="col">Monday</div>
-              <div class="col">Tuesday</div>
-          </div> 
-          </p>
-        
-        <p class="five-icons">
-          <div class="row row-cols-2.4">
-           <div class="col"><img src=" http://openweathermap.org/img/wn/10d@2x.png" alt="rain" width="68px"></div>
-           <div class="col"><img src=" http://openweathermap.org/img/wn/10d@2x.png" alt="rain" width="68px"></div>
-           <div class="col"><img src=" http://openweathermap.org/img/wn/10d@2x.png" alt="rain" width="68px"></div>
-           <div class="col"><img src=" http://openweathermap.org/img/wn/10d@2x.png" alt="rain" width="68px"></div>
-           <div class="col"><img src=" http://openweathermap.org/img/wn/10d@2x.png" alt="rain" width="68px"></div>
-          </div>
-          </p>
-    
-        <p class="five-weather">
-          <div class="row row-cols-2.4">
-            <div class="col">Sunny</div>
-             <div class="col">Sunny</div>
-             <div class="col">Partly Cloudy</div>
-             <div class="col">Storm</div>
-             <div class="col">Light Rain</div>
-         </div> 
-        </p>
+        <div class="container">
+            <div class="row" id="forecast">
+              <div class="col-2">
+                  <p>6:00</p>
+                  <img 
+                  src="http://openweathermap.org/img/wn/10d@2x.png"
+                  alt="rain"
+                  width=90px/>
+                <p>Clear</p>
+                </div>
+            
+            </div>
       </div>
-       
     </div>
+    </div>
+    
     <small class="footer">
       <a href="https://github.com/lydiakiu/weather-mood-app" target="_blank">Open-sourced code</a>, by Lydia K
     </small>
- 
+  
     <script src="src/app.js"></script>
   </body>
 </html>
