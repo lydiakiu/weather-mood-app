@@ -52,12 +52,6 @@ p {
   font-size: 26px;
   text-transform: capitalize;
 }
-.col-2 img {
-  display: block;
-}
-.col-2 p {
-  text-transform: capitalize;
-}
 .col-4 {
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
@@ -67,6 +61,14 @@ p {
   text-decoration: none;
   cursor: default;
 }
+
+.col-2 img {
+  display: block;
+}
+.col-2 p {
+  text-transform: capitalize;
+}
+
 .col p {
   font-family: "Open Sans", sans-serif;
   color: #212121;
@@ -78,5 +80,5 @@ p {
   margin: 0;
 }
 #temperature {
-  font-size: 30px;
+  font-size: 32px;
 }

@@ -52,7 +52,7 @@ function displayTemp(response) {
   windElement.innerHTML = Math.round(response.data.wind.speed);
   iconElement.setAttribute(
     "src",
-    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+    `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
   dateElement.innerHTML = formatDate(response.data.dt * 1000);
@@ -141,7 +141,7 @@ let minCelciusTemperature = null;
 let form = document.querySelector("#city-form");
 form.addEventListener("submit", handleSubmit);
 
-search("Singapore");
+search("San Francisco");
 
 let fahrenheitLink = document.querySelector("#fah-link");
 fahrenheitLink.addEventListener("click", displayFahTemp);
