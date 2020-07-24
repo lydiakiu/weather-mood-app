@@ -68,7 +68,7 @@ function displayForecast(response) {
     forecastElement.innerHTML += `<div class="col-2">
     <p>${formatHours(forecast.dt * 1000)}</p>
     <img 
-    src="http://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png"
+    src="https://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png"
     alt="${forecast.weather[0].description}"
     width=90px/>
     <p>${forecast.weather[0].description}</p>
@@ -141,7 +141,7 @@ let minCelciusTemperature = null;
 let form = document.querySelector("#city-form");
 form.addEventListener("submit", handleSubmit);
 
-search("toronto");
+search("Singapore");
 
 let fahrenheitLink = document.querySelector("#fah-link");
 fahrenheitLink.addEventListener("click", displayFahTemp);
